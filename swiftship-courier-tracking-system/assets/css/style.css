@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #0056b3;
+  --secondary-color: #ffffff;
+  --accent-color: #f39c12;
+  --text-dark: #333333;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--secondary-color) !important;
+}
+
+.hero-section {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+
+.tracking-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-top: -50px;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  list-style: none;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 2px;
+  background-color: #ddd;
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  border: 3px solid white;
+}
+
+.timeline-date {
+  font-size: 0.85em;
+  color: #777;
+}
+
+.timeline-content {
+  font-weight: bold;
+}
